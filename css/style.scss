@@ -56,7 +56,7 @@ p {font-size: 12px;
 }
 
 
-@media (max-width: 550px) {
+@media (max-width: 767px) {
     #header_in{
        padding-bottom: 10px;
     }
@@ -130,46 +130,64 @@ p {font-size: 12px;
     }
     }
 
-    @media (min-width: 550px) {
+    @media (min-width: 768px) {
     .sp_navi{
       display: none;
     }
     
-    #header_in{
-      padding-top: 30px;
-    }
-    
-    .sixcolumns {
-      margin: 0;
-      padding: 0;
-      
-    }
-    
-    .pc_navi_li{
-       
-       margin-top: 20px;
-       margin-bottom: 0;
-      
-     
-      li{
-        display: inline-block;
-        list-style:none;
-        padding: 0 7px;
-        vertical-align: bottom;
-     
-      }
-    
-      }
-    // .pc_navi_li
+        #header_in{
+          padding-top: 30px;
+        }
         
-  }
-  // min-width: 550px
+        .sixcolumns {
+          margin: 0;
+          padding: 0;
+          
+        }
+        
+        .pc_navi {
+            display: flex;
+            flex-direction: row;
+            -webkit-flex-wrap: wrap; 
+            flex-wrap:         wrap;
+            min-width: 341px;
+            align-items: flex-end;
+            
+          
+        }
+        
+        .pc_navi_li{
+           margin-bottom: 0;
+           padding: 10px 7px 0 7px;
     
-    @media (max-width: 550px) {
+          
+         
+         img #insta_btn{
+             padding: 0;
+         }  
+      }
+      }
+      
+      
+    @media (max-width: 767px) {
     .pc_navi{
       display: none;
     }
   }
+   
+    @media (min-width: 986px) {
+        .pc_navi{
+        display: flex;
+        -webkit-flex-wrap: nowrap; 
+        flex-wrap:         nowrap;
+        min-width: 100%;
+        
+        }
+        .pc_navi_li{
+            margin-top: 20px;
+            padding: 0 10px;
+    }
+    }
   
 #sidebar{
    margin-left: 20px;
@@ -238,7 +256,7 @@ p {font-size: 12px;
     padding: 15px 10px;
     margin-bottom: 0;
     }
-   #next_icon_gray{
+    img {
     float: right;
    }
   }
@@ -268,7 +286,7 @@ p {font-size: 12px;
     
   
 }
-@media (min-width: 550px) {
+@media (min-width: 756px) {
    #sidebar{
       margin-left: 20px;
         }
@@ -299,7 +317,7 @@ p {font-size: 12px;
     
        }
  }
-  .more_btn #more{
+  .more_btn {
        clear: both;
        float: right;
        max-width: 110px;
@@ -600,7 +618,6 @@ p {font-size: 12px;
       
       
   .back, .next {
-    
     box-sizing: border-box;
     background-color: $blown;
     width: 18%;

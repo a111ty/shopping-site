@@ -29,7 +29,7 @@ p {
 #section {
   margin-right: 0; }
 
-@media (max-width: 550px) {
+@media (max-width: 767px) {
   #header_in {
     padding-bottom: 10px; }
 
@@ -85,7 +85,7 @@ p {
         text-decoration: none; }
         .sp_navi_li li a a:hover {
           background-color: #e2ddd4; } }
-@media (min-width: 550px) {
+@media (min-width: 768px) {
   .sp_navi {
     display: none; }
 
@@ -96,17 +96,32 @@ p {
     margin: 0;
     padding: 0; }
 
+  .pc_navi {
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    min-width: 341px;
+    align-items: flex-end; }
+
   .pc_navi_li {
-    margin-top: 20px;
-    margin-bottom: 0; }
-    .pc_navi_li li {
-      display: inline-block;
-      list-style: none;
-      padding: 0 7px;
-      vertical-align: bottom; } }
-@media (max-width: 550px) {
+    margin-bottom: 0;
+    padding: 10px 7px 0 7px; }
+    .pc_navi_li img #insta_btn {
+      padding: 0; } }
+@media (max-width: 767px) {
   .pc_navi {
     display: none; } }
+@media (min-width: 986px) {
+  .pc_navi {
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    min-width: 100%; }
+
+  .pc_navi_li {
+    margin-top: 20px;
+    padding: 0 10px; } }
 #sidebar {
   margin-left: 20px; }
 
@@ -161,7 +176,7 @@ p {
     font-size: 12px;
     padding: 15px 10px;
     margin-bottom: 0; }
-  .categorie_name ul #next_icon_gray {
+  .categorie_name ul img {
     float: right; }
 
 .about_title, .shopinfo_title {
@@ -183,7 +198,7 @@ p {
   text-align: center;
   margin: auto; }
 
-@media (min-width: 550px) {
+@media (min-width: 756px) {
   #sidebar {
     margin-left: 20px; } }
 @media (max-width: 550px) {
@@ -205,7 +220,7 @@ p {
       float: right;
       width: 50%; }
 
-  .more_btn #more {
+  .more_btn {
     clear: both;
     float: right;
     max-width: 110px;
@@ -213,7 +228,7 @@ p {
     position: absolute;
     bottom: 20px;
     right: 40px; }
-    .more_btn #more .u-max-full-width {
+    .more_btn .u-max-full-width {
       max-width: 100%;
       box-sizing: border-box; } }
 .nine #banner_img {
